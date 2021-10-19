@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+add_definitions(-std=c++11)
+project( VideoCapture )
+find_package( OpenCV REQUIRED )
+add_executable( VideoCapture video_capture.cpp )
+target_link_libraries( VideoCapture ${OpenCV_LIBS} )
